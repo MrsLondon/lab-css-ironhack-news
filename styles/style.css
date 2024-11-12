@@ -176,13 +176,15 @@ header {
 .btn-blue {
   background-color: #007bff;
 }
+.menu-icon {
+  display: none;
+}
 
 
 
 @media(max-width: 760px){
 
   .navbar{
-  background-color: yellow;
   display:flex;
   flex-direction: column;
   align-items: center; 
@@ -219,6 +221,7 @@ header {
   padding: 20px;
 }
 
+
 .article {
   width: 100%;
   padding: 20px;
@@ -226,12 +229,16 @@ header {
   margin-bottom: 20px ;
 }
 
+.menu-icon {
+  display: none;
+}
+
+
 }
 
 @media (min-width: 761px) and (max-width: 1024px) {
   .navbar {
     justify-content: space-around !important;
-    background-color: #ee4545 ;
   }
   
   .navbar li {
@@ -242,5 +249,23 @@ header {
     width: 48%; 
     margin-bottom: 20px;
   }
-
+  .menu-icon {
+    display: none;
   }
+}
+
+  @media (max-width:480px) {
+    .navbar{
+      display: none;
+    }
+    .menu-icon {
+      display: block; 
+      padding: 10px;
+    }
+    .newspaper-name {
+      border-bottom: none;
+    }
+    
+  }
+
+
